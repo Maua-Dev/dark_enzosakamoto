@@ -1,20 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Dev in The Dark</title>
-</head>
+  </head>
+  <style>
+    :root {
+      /* Não altere nada aqui dentro */
+      --red: #a00000;
+      --blue: #0021d1;
+      --white: #ffffff;
+      --black: #030406;
+    }
 
-<body>
+    main {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      background-color: black;
+    }
+
+    .matrix1 {
+      display: flex;
+      height: 100%;
+      width: 33%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .matrix1 > div {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      background-color: var(--red);
+      border-top-right-radius: 100%;
+      border-bottom-right-radius: 100%;
+    }
+
+    .matrix2 {
+      display: flex;
+      height: 100%;
+      width: 33%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .matrix2 > div {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      background-color: var(--blue);
+      border-top-left-radius: 100%;
+      border-bottom-left-radius: 100%;
+    }
+
+    .mid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 33%;
+      gap: 20px;
+    }
+
+    .mid > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .botao1 {
+      color: white;
+      background-color: var(--red);
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 16px;
+    }
+
+    .botao2 {
+      color: white;
+      background-color: var(--blue);
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 16px;
+    }
+
+    .botao3 {
+      color: black;
+      background-color: white;
+      padding: 12px;
+      font-size: 18px;
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .navbar {
+      font-size: 32px;
+    }
+  </style>
+
+  <body>
     <!--Escreva a partir daqui-->
-</body>
-
+    <main>
+      <div class="matrix1">
+        <div>SAIR DA MATRIX</div>
+      </div>
+      <div class="mid">
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 16px;
+            gap: 24px;
+          "
+        >
+          <p class="navbar" style="color: var(--red)">HOME</p>
+          <p class="navbar" style="color: var(--black)">MENU</p>
+          <p class="navbar" style="color: var(--blue)">LOGIN</p>
+        </div>
+        <img src="logo.png" alt="logo" />
+        <div>
+          <buttton class="botao1">PÍLULA VERMELHA</buttton>
+          <buttton class="botao2">PÍLULA AZUL</buttton>
+        </div>
+        <button class="botao3">VER PARTICIPANTES</button>
+      </div>
+      <div class="matrix2">
+        <div>FICAR NA MATRIX</div>
+      </div>
+    </main>
+  </body>
 </html>
